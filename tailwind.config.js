@@ -3,12 +3,14 @@ module.exports = {
   content: ["./src/**/*.{html,js}", "./*.{html,js}"],
   theme: {
     extend: {},
-
-    fontFamily: {
-      'outfit': ['Outfit', 'sans-serif']
+    colors: {
+      customGreen: "#00672E",
     },
 
+    fontFamily: {
+      outfit: ["Outfit", "sans-serif"],
+    },
   },
   plugins: [],
-}
+};
 
