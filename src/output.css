@@ -556,13 +556,34 @@ video {
   --tw-contain-style:  ;
 }
 
-.font-outfit{
-  font-family: Outfit, sans-serif;
+.flex{
+  display: flex;
 }
 
-.text-5xl{
-  font-size: 3rem;
-  line-height: 1;
+.flex-row{
+  flex-direction: row;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.bg-red-600{
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 
 .font-bold{
