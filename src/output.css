@@ -1017,6 +1017,14 @@ video {
     left: 55%;
   }
 
+  .md\:bottom-\[17\%\]{
+    bottom: 17%;
+  }
+
+  .md\:bottom-\[10\%\]{
+    bottom: 10%;
+  }
+
   .md\:hidden{
     display: none;
   }
