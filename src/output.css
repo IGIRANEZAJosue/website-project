@@ -556,28 +556,20 @@ video {
   --tw-contain-style:  ;
 }
 
-.ml-12{
-  margin-left: 3rem;
-}
-
-.ml-14{
-  margin-left: 3.5rem;
-}
-
-.ml-8{
-  margin-left: 2rem;
-}
-
-.ml-9{
-  margin-left: 2.25rem;
-}
-
 .flex{
   display: flex;
 }
 
 .hidden{
   display: none;
+}
+
+.h-6{
+  height: 1.5rem;
+}
+
+.w-8{
+  width: 2rem;
 }
 
 .flex-row{
@@ -588,24 +580,34 @@ video {
   flex-direction: column;
 }
 
+.items-end{
+  align-items: flex-end;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .p-4{
   padding: 1rem;
 }
 
-.pl-\[25\%\]{
-  padding-left: 25%;
-}
-
-.pl-\[33\%\]{
-  padding-left: 33%;
-}
-
-.pl-\[4\%\]{
-  padding-left: 4%;
-}
-
 .font-outfit{
   font-family: Outfit, sans-serif;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .text-\[1\.5rem\]{
@@ -616,43 +618,22 @@ video {
   font-size: 1rem;
 }
 
+.font-bold{
+  font-weight: 700;
+}
+
 .font-semibold{
   font-weight: 600;
 }
 
 @media (min-width: 768px){
-  .md\:ml-32{
-    margin-left: 8rem;
-  }
-
-  .md\:mr-24{
-    margin-right: 6rem;
-  }
-
-  .md\:ml-12{
-    margin-left: 3rem;
-  }
-
-  .md\:justify-between{
-    justify-content: space-between;
-  }
-
-  .md\:object-cover{
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
   }
 
-  .md\:pt-4{
-    padding-top: 1rem;
-  }
-
-  .md\:text-\[1\.6rem\]{
-    font-size: 1.6rem;
+  .md\:text-\[1\.5rem\]{
+    font-size: 1.5rem;
   }
 
   .md\:text-\[3rem\]{
@@ -677,14 +658,6 @@ video {
     padding: 1.5rem;
   }
 
-  .lg\:pl-\[20\%\]{
-    padding-left: 20%;
-  }
-
-  .lg\:pl-\[25\%\]{
-    padding-left: 25%;
-  }
-
   .lg\:text-\[1\.5rem\]{
     font-size: 1.5rem;
   }
@@ -695,19 +668,7 @@ video {
 }
 
 @media (min-width: 1280px){
-  .xl\:flex{
-    display: flex;
-  }
-
-  .xl\:flex-col{
-    flex-direction: column;
-  }
-
   .xl\:p-6{
     padding: 1.5rem;
-  }
-
-  .xl\:pl-\[40\%\]{
-    padding-left: 40%;
   }
 }
