@@ -556,6 +556,22 @@ video {
   --tw-contain-style:  ;
 }
 
+.flex{
+  display: flex;
+}
+
+.items-start{
+  align-items: flex-start;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.p-8{
+  padding: 2rem;
+}
+
 .font-outfit{
   font-family: Outfit, sans-serif;
 }
@@ -565,6 +581,15 @@ video {
   line-height: 1;
 }
 
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold{
   font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
 }
