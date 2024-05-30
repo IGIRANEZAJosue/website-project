@@ -556,6 +556,14 @@ video {
   --tw-contain-style:  ;
 }
 
+.visible{
+  visibility: visible;
+}
+
+.m-8{
+  margin: 2rem;
+}
+
 .flex{
   display: flex;
 }
@@ -566,6 +574,10 @@ video {
 
 .h-6{
   height: 1.5rem;
+}
+
+.h-1\/2{
+  height: 50%;
 }
 
 .w-8{
@@ -601,6 +613,18 @@ video {
   padding: 1rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
+.pl-\[20\%\]{
+  padding-left: 20%;
+}
+
+.pt-20{
+  padding-top: 5rem;
+}
+
 .font-outfit{
   font-family: Outfit, sans-serif;
 }
@@ -627,9 +651,17 @@ video {
 }
 
 @media (min-width: 768px){
+  .md\:p-8{
+    padding: 2rem;
+  }
+
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:pl-\[40\%\]{
+    padding-left: 40%;
   }
 
   .md\:text-\[1\.5rem\]{
@@ -639,9 +671,17 @@ video {
   .md\:text-\[3rem\]{
     font-size: 3rem;
   }
+
+  .md\:text-\[2rem\]{
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 1024px){
+  .lg\:m-8{
+    margin: 2rem;
+  }
+
   .lg\:flex{
     display: flex;
   }
@@ -656,6 +696,14 @@ video {
 
   .lg\:p-6{
     padding: 1.5rem;
+  }
+
+  .lg\:p-12{
+    padding: 3rem;
+  }
+
+  .lg\:pl-\[40\%\]{
+    padding-left: 40%;
   }
 
   .lg\:text-\[1\.5rem\]{
