@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="/src/output.css" />
     <title>Baumeister</title>
-</head>
-<script>
-    const loadComponents = (id, url) =>  {
-        fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-            document.getElementById(id).innerHTML = html;
-        });
-    }
-
-    window.onload = () => {
-        loadComponents('Navbar', 'src/sections/Navbar.html');
-        
-    }
-</script>
-<body>
+  </head>
+  <body>
     <div id="Navbar"></div>
-    
-</body>
+
+    <script>
+      const loadComponents = (id, url) => {
+        fetch(url)
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById(id).innerHTML = html;
+            setupNavbar();
+          });
+      };
+
+      const setupNavbar = () => {
+      let element = document.getElementById("showmenu");
+      let hidemenu = document.getElementById("hidemenu");
+      let menu = document.getElementById("menu");
+  
+      element.addEventListener("click", function () {
+      menu.classList.remove("hidden");
+      hidemenu.classList.remove("hidden");
+      element.classList.add("hidden");
+    });
+  
+      hidemenu.addEventListener("click", function () {
+      menu.classList.add("hidden");
+      hidemenu.classList.add("hidden");
+      element.classList.remove("hidden");
+  });
+};
+
+      window.onload = () => {
+        loadComponents("Navbar", "src/sections/Navbar.html");
+      };
+    </script>
+  </body>
 </html>
