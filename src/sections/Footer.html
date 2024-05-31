@@ -1,19 +1,27 @@
 <footer
-  class="flex items-start justify-between text-2xl font-medium font-outfit p-8"
+  class="flex flex-col items-start gap-8 p-5 font-medium lg:flex-row md:justify-between md:p-10 lg:p-9 font-outfit lg:text-2xl"
 >
-  <div>
-    <p>Agentur Baumeister</p>
-    <p>Böckhstraße 13</p>
-    <p>10967 Berlin</p>
+  <div
+    class="flex flex-col items-start justify-between w-full space-y-6 md:flex-row"
+  >
+    <div class="w-full">
+      <p>Agentur Baumeister</p>
+      <p>Böckhstraße 13</p>
+      <p>10967 Berlin</p>
+    </div>
+    <div class="w-full">
+      <p>hallo@agentur-baumeister.com</p>
+      <p>+49 (0)30 - 490 827 87</p>
+    </div>
   </div>
-  <div>
-    <p>hallo@agentur-baumeister.com</p>
-    <p>+49 (0)30 - 490 827 87</p>
-  </div>
-  <p>LinkedIn</p>
-  <p>Instagram</p>
-  <div>
-    <p>Impressum</p>
-    <p>Datenschutz</p>
+  <div class="flex justify-between w-full gap-5 lg:flex-grow">
+    <p>LinkedIn</p>
+    <p>Instagram</p>
+    <div
+      class="flex flex-row justify-between gap-5 lg:flex-col lg:items-end md:w-1/2 lg:w-auto"
+    >
+      <p>Impressum</p>
+      <p>Datenschutz</p>
+    </div>
   </div>
 </footer>
