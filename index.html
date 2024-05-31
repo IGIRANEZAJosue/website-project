@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/src/output.css">
-   <title>Baumeister</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/output.css">
+    <title>Baumeister</title>
 </head>
-<body>
-   
-   <h1 class="font-bold font-outfit text-5xl">Hello World</h1>
+<script>
+    const loadComponents = (id, url) =>  {
+        fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+            document.getElementById(id).innerHTML = html;
+        });
+    }
 
+    window.onload = () => {
+        loadComponents('hero', 'src/sections/Hero.html');    
+    }
+</script>
+<body>
+    <div id="hero"></div>
 </body>
 </html>
