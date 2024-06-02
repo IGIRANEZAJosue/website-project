@@ -588,16 +588,18 @@ video {
   flex-direction: column;
 }
 
-.items-end{
-  align-items: flex-end;
-}
-
 .items-center{
   align-items: center;
 }
 
 .justify-between{
   justify-content: space-between;
+}
+
+.space-y-14 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(3.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(3.5rem * var(--tw-space-y-reverse));
 }
 
 .p-4{
@@ -608,8 +610,12 @@ video {
   padding-left: 8rem;
 }
 
-.pt-56{
-  padding-top: 14rem;
+.pt-\[130\%\]{
+  padding-top: 130%;
+}
+
+.pt-\[120\%\]{
+  padding-top: 120%;
 }
 
 .font-outfit{
@@ -621,6 +627,15 @@ video {
   line-height: 2rem;
 }
 
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
 .font-semibold{
   font-weight: 600;
 }
@@ -630,48 +645,28 @@ video {
   color: rgb(21 128 61 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px){
-  .sm\:absolute{
-    position: absolute;
-  }
-}
-
 @media (min-width: 768px){
-  .md\:absolute{
-    position: absolute;
-  }
-
-  .md\:m-1{
-    margin: 0.25rem;
-  }
-
   .md\:ml-\[20\%\]{
     margin-left: 20%;
   }
 
-  .md\:ml-2{
-    margin-left: 0.5rem;
-  }
-
-  .md\:ml-1{
-    margin-left: 0.25rem;
-  }
-
-  .md\:ml-\[\]{
-    margin-left: ;
-  }
-
-  .md\:ml-\[2\]{
-    margin-left: 2;
-  }
-
-  .md\:ml-\[20\]{
-    margin-left: 20;
+  .md\:space-y-20 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(5rem * var(--tw-space-y-reverse));
   }
 
   .md\:px-8{
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .md\:pt-\[60\%\]{
+    padding-top: 60%;
+  }
+
+  .md\:pt-\[70\%\]{
+    padding-top: 70%;
   }
 
   .md\:text-2xl{
@@ -682,6 +677,10 @@ video {
   .md\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .md\:font-bold{
+    font-weight: 700;
   }
 }
 
@@ -702,6 +701,16 @@ video {
     display: none;
   }
 
+  .lg\:items-end{
+    align-items: flex-end;
+  }
+
+  .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
   .lg\:p-6{
     padding: 1.5rem;
   }
@@ -718,14 +727,21 @@ video {
     padding-top: 3.5rem;
   }
 
+  .lg\:pl-\[86\%\]{
+    padding-left: 86%;
+  }
+
+  .lg\:pl-\[87\%\]{
+    padding-left: 87%;
+  }
+
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  .lg\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
+  .lg\:font-normal{
+    font-weight: 400;
   }
 
   .lg\:text-black{
