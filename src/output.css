@@ -556,6 +556,10 @@ video {
   --tw-contain-style:  ;
 }
 
+.visible{
+  visibility: visible;
+}
+
 .absolute{
   position: absolute;
 }
@@ -674,9 +678,8 @@ video {
     line-height: 2rem;
   }
 
-  .md\:text-5xl{
-    font-size: 3rem;
-    line-height: 1;
+  .lg\:flex-row{
+    flex-direction: row;
   }
 
   .md\:font-bold{
