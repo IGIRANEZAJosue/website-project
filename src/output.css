@@ -564,6 +564,10 @@ video {
   position: relative;
 }
 
+.sticky{
+  position: sticky;
+}
+
 .bottom-\[-1\%\]{
   bottom: -1%;
 }
@@ -598,6 +602,10 @@ video {
 
 .right-\[5\%\]{
   right: 5%;
+}
+
+.top-0{
+  top: 0px;
 }
 
 .top-\[40\%\]{
@@ -945,12 +953,12 @@ video {
     z-index: 0;
   }
 
-  .lg\:ml-0{
-    margin-left: 0px;
-  }
-
   .lg\:mb-12{
     margin-bottom: 3rem;
+  }
+
+  .lg\:ml-0{
+    margin-left: 0px;
   }
 
   .lg\:inline-block{
