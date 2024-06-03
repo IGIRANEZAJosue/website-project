@@ -1,58 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/output.css">
-    <title>Baumeister</title>
-</head>
-=======
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/output.css" />
     <title>Baumeister</title>
->>>>>>> 1d3b65d87ac37910db1b1fae0898791469bf1545
-<script>
-    const loadComponents = (id, url) =>  {
-        fetch(url)
+  </head>
+  <script>
+    const loadComponents = (id, url) => {
+      fetch(url)
         .then((response) => response.text())
         .then((html) => {
-<<<<<<< HEAD
-            document.getElementById(id).innerHTML = html;
-        });
-    }
-
-    window.onload = () => {
-       
-        loadComponents('References', 'src/sections/References.html');
-      
-    }
-</script>
-<body>
-   
-    <div id="References"></div>
-    
-=======
           document.getElementById(id).innerHTML = html;
         });
     };
     window.onload = () => {
-
-        loadComponents('hero', 'src/sections/Hero.html');
-        loadComponents('About', 'src/sections/About.html');
-        loadComponents("footer", "src/sections/Footer.html");
-    
-    }
-
-
-</script>
-<body>
+      loadComponents("hero", "src/sections/Hero.html");
+      loadComponents("References", "src/sections/References.html");
+      loadComponents("footer", "src/sections/Footer.html");
+    };
+  </script>
+  <body>
     <div id="hero"></div>
-    <div id="About"></div>
-      <div id="footer"></div>
->>>>>>> 1d3b65d87ac37910db1b1fae0898791469bf1545
-</body>
+    <div id="References"></div>
+    <div id="footer"></div>
+  </body>
 </html>
-
