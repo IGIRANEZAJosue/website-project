@@ -20,28 +20,15 @@
     }
 
     window.onload = () => {
-        loadComponents('hero', 'src/sections/Hero.html');    
-    }
-</script>
-<script>
-    const loadComponents = (id, url) =>  {
-        fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-            document.getElementById(id).innerHTML = html;
-        });
+        loadComponents('hero', 'src/sections/Hero.html');
+         
+        loadComponents('About', 'src/sections/About.html');    
     }
 
-    window.onload = () => {
-       
-        loadComponents('About', 'src/sections/About.html');
-      
-    }
+
 </script>
 <body>
     <div id="hero"></div>
-   
     <div id="About"></div>
-    
 </body>
 </html>
