@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/output.css" />
+    <link rel="stylesheet" href="/src/output.css">
     <title>Baumeister</title>
-  </head>
-  <body>
-    <div id="Navbar"></div>
+</head>
+  <script>
+        const loadComponents = (id, url) =>  {
+        fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+            document.getElementById(id).innerHTML = html;
+        });
+    }
 
-    <script>
+    window.onload = () => {
+        loadComponents('hero', 'src/sections/Hero.html');    
+    }
       const loadComponents = (id, url) => {
         fetch(url)
           .then((response) => response.text())
@@ -41,5 +49,11 @@
         loadComponents("Navbar", "src/sections/Navbar.html");
       };
     </script>
+<body>
+    <div id="hero"></div>
+
+    <div id="Navbar"></div>
+
+  
   </body>
 </html>
