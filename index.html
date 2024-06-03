@@ -1,34 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/output.css">
-    <title>Baumeister</title>
-</head>
-<script>
-    const loadComponents = (id, url) =>  {
-        fetch(url)
-        .then((response) => response.text())
-        .then((html) => {
-            document.getElementById(id).innerHTML = html;
-        });
-    }
-
-    window.onload = () => {
-       
-        loadComponents('References', 'src/sections/References.html');
-      
-    }
-</script>
-<body>
-   
-    <div id="References"></div>
-    
-</body>
-</html>
-=======
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -46,12 +17,13 @@
 
     window.onload = () => {
       loadComponents("hero", "src/sections/Hero.html");
+      loadComponents("References", "src/sections/References.html");
       loadComponents("footer", "src/sections/Footer.html");
     };
   </script>
   <body>
     <div id="hero"></div>
+    <div id="References"></div>
     <div id="footer"></div>
   </body>
 </html>
->>>>>>> dev
