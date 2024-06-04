@@ -12,16 +12,40 @@
         .then((response) => response.text())
         .then((html) => {
           document.getElementById(id).innerHTML = html;
+          setupNavbar();
         });
     };
+
+    const setupNavbar = () => {
+      let element = document.getElementById("showmenu");
+      let hidemenu = document.getElementById("hidemenu");
+      let menu = document.getElementById("menu");
+
+      element.addEventListener("click", function () {
+        menu.classList.remove("hidden");
+        hidemenu.classList.remove("hidden");
+        element.classList.add("hidden");
+      });
+
+      hidemenu.addEventListener("click", function () {
+        menu.classList.add("hidden");
+        hidemenu.classList.add("hidden");
+        element.classList.remove("hidden");
+      });
+    };
+
     window.onload = () => {
+      loadComponents("Navbar", "src/sections/Navbar.html");
       loadComponents("hero", "src/sections/Hero.html");
+      loadComponents("About", "src/sections/About.html");
       loadComponents("References", "src/sections/References.html");
       loadComponents("footer", "src/sections/Footer.html");
     };
   </script>
   <body>
+    <div id="Navbar"></div>
     <div id="hero"></div>
+    <div id="About"></div>
     <div id="References"></div>
     <div id="footer"></div>
   </body>
