@@ -14,8 +14,8 @@ module.exports = {
   plugins: [
     function ({ addUtilities }) {
       addUtilities({
-        '.clip-bottom': {
-          'clip-path': 'polygon(0 60%, 35% 95%, 100% 55%, 100% 100%, 0 100%)',
+        ".clip-bottom": {
+          "clip-path": "polygon(0 80%, 35% 95%, 100% 80%, 100% 100%, 0 100%)",
         },
       });
     },
