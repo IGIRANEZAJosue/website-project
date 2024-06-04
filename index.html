@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/src/output.css" />
     <title>Baumeister</title>
   </head>
+  </head>
   <script>
     const loadComponents = (id, url) => {
       fetch(url)
@@ -16,6 +17,7 @@
         });
     };
 
+    const setupNavbar = () => {
     const setupNavbar = () => {
       let element = document.getElementById("showmenu");
       let hidemenu = document.getElementById("hidemenu");
@@ -38,7 +40,9 @@
       loadComponents("Navbar", "src/sections/Navbar.html");
       loadComponents("hero", "src/sections/Hero.html");
       loadComponents("About", "src/sections/About.html");
+      loadComponents("services", "src/sections/Services.html");
       loadComponents("References", "src/sections/References.html");
+      loadComponents("redImage", "src/sections/redImage.html");
       loadComponents("footer", "src/sections/Footer.html");
     };
   </script>
@@ -46,7 +50,9 @@
     <div id="Navbar"></div>
     <div id="hero"></div>
     <div id="About"></div>
+    <div id="services"></div>
     <div id="References"></div>
+    <div id="redImage"></div>
     <div id="footer"></div>
   </body>
 </html>
