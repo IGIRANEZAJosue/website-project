@@ -9,15 +9,11 @@ module.exports = {
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
       },
+      colors: {
+        webGreen: "#00672E",
+        fadeWhite: "#EFECEA",
+      },
     },
   },
-  plugins: [
-    function ({ addUtilities }) {
-      addUtilities({
-        ".clip-bottom": {
-          "clip-path": "polygon(0 80%, 35% 95%, 100% 80%, 100% 100%, 0 100%)",
-        },
-      });
-    },
-  ],
+  plugins: [],
 };
