@@ -5,15 +5,21 @@ module.exports = {
     extend: {
       colors: {
         customYellow: "#FFE800",
+        webGreen: "#00672E",
+        fadeWhite: "#EFECEA",
       },
       fontFamily: {
         outfit: ["Outfit", "sans-serif"],
       },
-      colors: {
-        webGreen: "#00672E",
-        fadeWhite: "#EFECEA",
-      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".clip-bottom": {
+          "clip-path": "polygon(0 80%, 35% 95%, 100% 80%, 100% 100%, 0 100%)",
+        },
+      });
+    },
+  ],
 };
