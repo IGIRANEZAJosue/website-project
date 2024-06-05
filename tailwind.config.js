@@ -5,6 +5,8 @@ module.exports = {
       extend: {
          colors: {
             customYellow: "#FFE800",
+            webGreen: "#00672E",
+            fadeWhite: "#EFECEA",
          },
          fontFamily: {
             outfit: ["Outfit", "sans-serif"],
