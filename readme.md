@@ -38,9 +38,7 @@ npm run dev
 
 ### **Link for our deployed version:**
 
-```js
-https://baumeister-team2.netlify.app/
-```
+[https://baumeister-team2.netlify.app/](https://baumeister-team2.netlify.app/)
 
 # **Credit goes to:**
 
