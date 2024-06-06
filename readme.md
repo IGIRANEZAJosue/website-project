@@ -1,14 +1,36 @@
 # Baumeister website project
 This is  website of a Berlin based communication agency that specialises in helping companies and brands find their unique voice and position.
-Working on this project we focused on peer programming as a team and we used HTML and tailwind framework.
-## Credit goes to:
-Josue Igiraneza
-Leslie Isaro
-Nsenga Mireille Queen
-Christelle Alexia Nizeyimana
-Richard Musime
+Working on this project we focused on peer programming as a team, we also used HTML and tailwind framework.
 
-## Link for our deployed version:
+# Getting Started
+These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
+
+## Installation
+### Clone the repository:
+
+`git clone https://github.com/IGIRANEZAJosue/website-project`
+
+
+### Navigate to the repository:
+
+`cd website-project`
+
+
+### Install dependencies:
+`npm install`
+
+### run the project:
+`npm run dev`
+
+### Link for our deployed version:
  https://baumeister-team2.netlify.app/
+
+ # Credit goes to:
+ Josue Igiraneza,
+ Leslie Isaro,
+ Queen Mireille  Nsenga,
+ Richard Musime,
+Christelle Alexia Nizeyimana.
+
 
 
