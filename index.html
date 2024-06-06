@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -25,6 +25,7 @@
       let hidefooter = document.getElementById("footer");
       let hidemenu = document.getElementById("hidemenu");
       let hidereference = document.getElementById("References");
+      let hideyellowshape = document.getElementById("yellowshape");
       let menu = document.getElementById("menu");
 
       element.addEventListener("click", function () {
@@ -37,6 +38,7 @@
         hideredImage.classList.add("hidden");
         hidefooter.classList.add("hidden");
         hidereference.classList.add("hidden");
+        hideyellowshape.classList.add("hidden");
       });
 
       hidemenu.addEventListener("click", function () {
@@ -49,6 +51,7 @@
         hideredImage.classList.remove("hidden");
         hidefooter.classList.remove("hidden");
         hidereference.classList.remove("hidden");
+        hideyellowshape.classList.remove("hidden");
       });
     };
 
@@ -66,7 +69,7 @@
     <div id="Navbar"></div>
     <div id="hero"></div>
     <div id="About"></div>
-    <div>
+    <div id="yellowshape">
       <img
         src="/Images/yellowShape2.svg"
         alt="yellow shape"
