@@ -13,6 +13,7 @@ module.exports = {
          },
          screens: {
             cl: "1340px",
+            cmd: "1100px",
          },
       },
    },
