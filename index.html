@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="/src/output.css" />
     <title>Baumeister</title>
   </head>
-  </head>
   <script>
     const loadComponents = (id, url) => {
       fetch(url)
@@ -19,19 +18,37 @@
 
     const setupNavbar = () => {
       let element = document.getElementById("showmenu");
+      let hidetext = document.getElementById("hidetext");
+      let hideabout = document.getElementById("About");
+      let hideservices = document.getElementById("services");
+      let hideredImage = document.getElementById("redImage");
+      let hidefooter = document.getElementById("footer");
       let hidemenu = document.getElementById("hidemenu");
+      let hidereference = document.getElementById("References");
       let menu = document.getElementById("menu");
 
       element.addEventListener("click", function () {
         menu.classList.remove("hidden");
         hidemenu.classList.remove("hidden");
         element.classList.add("hidden");
+        hidetext.classList.add("hidden");
+        hideabout.classList.add("hidden");
+        hideservices.classList.add("hidden");
+        hideredImage.classList.add("hidden");
+        hidefooter.classList.add("hidden");
+        hidereference.classList.add("hidden");
       });
 
       hidemenu.addEventListener("click", function () {
         menu.classList.add("hidden");
         hidemenu.classList.add("hidden");
         element.classList.remove("hidden");
+        hidetext.classList.remove("hidden");
+        hideabout.classList.remove("hidden");
+        hideservices.classList.remove("hidden");
+        hideredImage.classList.remove("hidden");
+        hidefooter.classList.remove("hidden");
+        hidereference.classList.remove("hidden");
       });
     };
 
