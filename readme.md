@@ -42,8 +42,8 @@ npm run dev
 
 # **Credit goes to:**
 
-- Josue Igiraneza,
-- Leslie Isaro,
-- Queen Mireille  Nsenga,
-- Richard Musime,
-- Christelle Alexia Nizeyimana.
+- Josue Igiraneza https://github.com/IGIRANEZAJosue
+- Leslie Isaro https://github.com/l-isaro
+- Queen Mireille  Nsenga https://github.com/nsengaqueen
+- Richard Musime https://github.com/musi922
+- Christelle Alexia Nizeyimana https://github.com/christellealexia
