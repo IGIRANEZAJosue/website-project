@@ -1,14 +1,84 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="/src/output.css">
-   <title>Baumeister</title>
-</head>
-<body>
-   
-   <h1 class="font-bold font-outfit text-5xl">Hello World</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
+    <title>Baumeister</title>
+  </head>
+  <script>
+    const loadComponents = (id, url) => {
+      fetch(url)
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById(id).innerHTML = html;
+          setupNavbar();
+        });
+    };
 
-</body>
+    const setupNavbar = () => {
+      let element = document.getElementById("showmenu");
+      let hidetext = document.getElementById("hidetext");
+      let hideabout = document.getElementById("About");
+      let hideservices = document.getElementById("services");
+      let hideredImage = document.getElementById("redImage");
+      let hidefooter = document.getElementById("footer");
+      let hidemenu = document.getElementById("hidemenu");
+      let hidereference = document.getElementById("References");
+      let hideyellowshape = document.getElementById("yellowshape");
+      let menu = document.getElementById("menu");
+
+      element.addEventListener("click", function () {
+        menu.classList.remove("hidden");
+        hidemenu.classList.remove("hidden");
+        element.classList.add("hidden");
+        hidetext.classList.add("hidden");
+        hideabout.classList.add("hidden");
+        hideservices.classList.add("hidden");
+        hideredImage.classList.add("hidden");
+        hidefooter.classList.add("hidden");
+        hidereference.classList.add("hidden");
+        hideyellowshape.classList.add("hidden");
+      });
+
+      hidemenu.addEventListener("click", function () {
+        menu.classList.add("hidden");
+        hidemenu.classList.add("hidden");
+        element.classList.remove("hidden");
+        hidetext.classList.remove("hidden");
+        hideabout.classList.remove("hidden");
+        hideservices.classList.remove("hidden");
+        hideredImage.classList.remove("hidden");
+        hidefooter.classList.remove("hidden");
+        hidereference.classList.remove("hidden");
+        hideyellowshape.classList.remove("hidden");
+      });
+    };
+
+    window.onload = () => {
+      loadComponents("Navbar", "src/sections/Navbar.html");
+      loadComponents("hero", "src/sections/Hero.html");
+      loadComponents("About", "src/sections/About.html");
+      loadComponents("services", "src/sections/Services.html");
+      loadComponents("References", "src/sections/References.html");
+      loadComponents("redImage", "src/sections/redImage.html");
+      loadComponents("footer", "src/sections/Footer.html");
+    };
+  </script>
+  <body class="bg-fadeWhite">
+    <div id="Navbar"></div>
+    <div id="hero"></div>
+    <div id="About"></div>
+    <div id="yellowshape">
+      <img
+        src="/Images/yellowShape2.svg"
+        alt="yellow shape"
+        class="top-0 sticky mx-auto my-10 w-1/2 md:w-auto"
+      />
+      <div id="services"></div>
+      <div id="References"></div>
+    </div>
+    <div id="redImage"></div>
+    <div id="footer"></div>
+  </body>
 </html>

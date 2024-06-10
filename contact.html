@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="/src/output.css" />
+      <title>Contact</title>
+   </head>
+   <body class="font-outfit text-webGreen">
+      <header>
+         <nav
+            class="md:top-0 md:z-10 fixed md:fixed flex flex-row justify-between items-center lg:mb-12 md:px-8 p-4 lg:p-6 xl:p-6 w-full font-outfit"
+         >
+            <div class="flex flex-col md:text-2xl lg:text-2xl">
+               <p>DE</p>
+               <p>EN</p>
+            </div>
+            <div
+               class="top-5 left-14 md:left-0 md:static fixed lg:absolute md:bg-auto bg-cover bg-center lg:pl-[40%]"
+            >
+               <a href="/">
+                  <h1
+                     class="lg:inline-block hidden font-semibold text-2xl md:text-5xl"
+                  >
+                     Baumeister
+                  </h1>
+               </a>
+               <a href="/">
+                  <img
+                     src="Images/baumeisterImage.svg"
+                     alt="baumeister image"
+                     class="lg:hidden md:mr-auto"
+                  />
+               </a>
+            </div>
+            <div
+               class="top-32 md:top-28 lg:static absolute lg:flex flex-col justify-center items-center lg:items-end space-y-8 md:space-y-20 lg:space-y-0 hidden mx-auto lg:mx-0 lg:pt-0 w-full font-semibold lg:font-normal text-3xl text-center text-webGreen md:text-4xl lg:text-2xl"
+               id="menu"
+            >
+               <p><a href="#About">About</a></p>
+               <p><a href="#services">Services</a></p>
+               <p><a href="#References">References</a></p>
+               <p><a href="./contact.html">Contact</a></p>
+            </div>
+
+            <span
+               class="top-6 right-4 z-10 md:static fixed flex lg:hidden w-8 h-6 cursor-pointer"
+               id="showmenu"
+            >
+               <img src="/Images/greenOpenMenu.svg" alt="Menu" />
+            </span>
+            <span class="hidden w-8 h-6 cursor-pointer" id="hidemenu">
+               <img src="/Images/greenOpenMenu.svg" alt="Menu" />
+            </span>
+         </nav>
+      </header>
+
+      <div
+         class="flex md:flex-row flex-col justify-between items-start md:items-end gap-20 lg:gap-0 px-5 md:px-14 lg:px-48 py-24"
+      >
+         <div
+            class="flex flex-col gap-8 lg:gap-14 text-2xl md:text-3xl lg:text-5xl"
+         >
+            <div>
+               <h1 class="font-bold text-2xl">IMPRINT</h1>
+               <h1 class="font-bold">Agentur Baumeister</h1>
+               <p>Katrein Baumeister</p>
+               <p>Böckhstraße 13</p>
+               <p>10967 Berlin</p>
+            </div>
+            <div>
+               <p>+49 (0)30 - 490 827 87</p>
+               <p>hallo@agentur-baumeister.com</p>
+            </div>
+            <div>
+               <h1 class="font-bold">UST-IDNR.</h1>
+               <p>DE 274 486 923</p>
+            </div>
+            <div>
+               <h1 class="font-bold">REGISTERED OFFICE</h1>
+               <p>Berlin, Deutschland</p>
+            </div>
+         </div>
+
+         <div
+            class="space-y-6 w-full md:w-1/2 text-2xl md:text-xl md:text-end lg:text-2xl"
+         >
+            <h1 class="font-bold">DISCLAIMER</h1>
+            <p>
+               Despite all due care, no liability can be accepted for the
+               accuracy, completeness and up to-dateness of the information
+               provided. The same applies to third-party websites to which
+               www.agentur-baumeister.com refers by means of hyperlinks. Katrein
+               Baumeister, Agentur Baumeister accepts no liability for the
+               content of these websites.
+            </p>
+         </div>
+      </div>
+
+      <section class="w-full">
+         <div class="md:flex justify-center items-center hidden px-8 py-24">
+            <img
+               class="w-auto md:w-3/4 lg:w-1/2"
+               src="/Images/redShape.svg"
+               alt="redShape"
+            />
+         </div>
+      </section>
+
+      <footer
+         class="flex lg:flex-row flex-col md:justify-between items-start gap-8 lg:gap-24 p-5 md:p-10 lg:p-9 font-medium font-outfit lg:text-xl"
+      >
+         <div
+            class="flex md:flex-row flex-col justify-between items-start gap-6 md:gap-0 w-full"
+         >
+            <div>
+               <p>Agentur Baumeister</p>
+               <p>Böckhstraße 13</p>
+               <p>10967 Berlin</p>
+            </div>
+            <div>
+               <p>hallo@agentur-baumeister.com</p>
+               <p>+49 (0)30 - 490 827 87</p>
+            </div>
+         </div>
+         <div
+            class="flex md:flex-row flex-row-reverse lg:flex-grow justify-between gap-5 w-full"
+         >
+            <p>LinkedIn</p>
+            <p>Instagram</p>
+            <div
+               class="flex flex-row lg:flex-col justify-between lg:items-end md:w-1/2 lg:w-auto"
+            >
+               <p><a href="/contact.html">Impressum</a></p>
+               <p><a href="/privacyPolicy.html">Datenschutz</a></p>
+            </div>
+         </div>
+      </footer>
+
+      <script>
+         const setupNavbar = () => {
+            let element = document.getElementById("showmenu");
+            let hidemenu = document.getElementById("hidemenu");
+            let menu = document.getElementById("menu");
+
+            element.addEventListener("click", function () {
+               menu.classList.remove("hidden");
+               hidemenu.classList.remove("hidden");
+               element.classList.add("hidden");
+            });
+
+            hidemenu.addEventListener("click", function () {
+               menu.classList.add("hidden");
+               hidemenu.classList.add("hidden");
+               element.classList.remove("hidden");
+            });
+         };
+         setupNavbar();
+      </script>
+   </body>
+</html>
