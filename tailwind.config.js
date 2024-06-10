@@ -11,11 +11,6 @@ module.exports = {
          fontFamily: {
             outfit: ["Outfit", "sans-serif"],
          },
-         screens: {
-            cl: "1240px",
-            cmd: "1100px",
-            c2xl: "1420px",
-         },
       },
    },
    plugins: [
